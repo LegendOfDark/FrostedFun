@@ -1,0 +1,240 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+header{
+    background-color: #D7EDEF;
+    font-family: "Times New Roman";
+    text-align: left;
+    padding: 15px;
+    width: 100%;
+}
+
+.motto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.logo{
+    height: 115px;
+}
+
+.img-container{
+    text-align: center;
+}
+
+header h1 {
+    font-size: 50px;
+    margin: 0;
+}
+header h6 {
+    margin: 0;
+    font-size: 17px;
+}
+
+.nav_bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_bar a{
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #224f5e;
+}
+
+
+.nav_bar a:hover {
+  background-color: #fff;
+  color: black;
+}
+
+#about {
+    margin-right: 20%;
+}
+
+
+.cupcake {
+    /*width: 100%;*/
+    background-image: url('https://wallpaperaccess.com/full/264881.jpg');
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*position: relative;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cupcake h2{
+    text-align: center;
+    letter-spacing: -1px;
+    font-family: dancingscript-regular,dancing script,cursive;
+    font-size: 700%;
+    color:blue;
+}
+
+.cupcake h5{
+    font-size: 30px;
+    font-family: "Times New Roman";
+    color: white;
+}
+.cupcake h5:hover{
+    text-decoration: underline;
+}
+
+.no-margin{
+    margin: 0px;
+}
+
+
+
+.carasol_img{
+    padding: 30px;
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.fresh{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Playfair Display';
+    justify-content: center;
+    padding: 0px 50px;
+}
+
+.fresh h1{
+    font-size: 2.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #479f92;
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+.fresh p{
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.5;
+    font-family: 'Playfair Display';
+}
+
+.fresh button{
+    background-color: #479f92;
+}
+
+.hours{
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}
+
+.hours_div{
+    padding: 0;
+}
+
+.hours_pic{
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    filter: brightness(67%);
+}
+
+.hours_text{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Playfair Display';
+}
+
+.hours h2{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.hours p{
+    font-size: 20px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playfair Display';
+}
+
+.footer h2{
+        font-size: 28px;
+        padding: 15px 0px;
+        margin:0px;
+    }
+
+a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+ }
+
+.footer h3{
+    font-size: 17px;
+}
+
+.footer img{
+    padding: 18px 0px;
+}
+
+.footer h5{
+    font-size: 15px;
+    padding-bottom: 40px 0px;
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+    .nav_bar {
+        justify-content: space-evenly;
+    }
+    .motto {
+        text-align: center;
+    }
+
+    #about{
+        margin: 0;
+    }
+
+    .carasol_img{
+        height: 350px;
+    }
+
+    .hours_pic{
+        height: 300px;
+    }
+
+}

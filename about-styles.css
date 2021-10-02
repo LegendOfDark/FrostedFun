@@ -1,0 +1,329 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+    padding:0;
+    margin:0;
+}
+
+header{
+    background-color: #D7EDEF;
+    font-family: "Times New Roman";
+    text-align: left;
+    padding: 15px;
+    width: 100%;
+}
+
+.motto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.logo{
+    height: 115px;
+}
+
+.img-container{
+    text-align: center;
+}
+
+header {
+    color: #367488;
+}
+
+header h1 {
+    font-size: 50px;
+    margin: 0;
+}
+header h6 {
+    margin: 0;
+    font-size: 17px;
+}
+
+.nav_bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_bar a{
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #367488;
+}
+
+
+.nav_bar a:hover {
+  background-color: #fff;
+  color: black;
+}
+
+#about {
+    margin-right: 20%;
+}
+
+.parent{
+    margin-top: 100px;
+    /* width: 100%; */
+}
+/*.parent > div {*/
+/*    display: inline-block;*/
+/*}*/
+
+.parallax{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/91DO61bgDsL._AC_SL1500_.jpg");
+    /* https://thumbs.dreamstime.com/z/pastel-ice-cream-waffle-cones-bright-background-copy-space-179260679.jpg */
+    /* url('https://pyxis.nymag.com/v1/imgs/36e/398/d6d3018f0180a3291345b1357c5f93aafc-morgensterns-sundae-bar-4.rvertical.w1200.jpg'); */
+    height: 500px;
+    max-height:800px;
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.text{
+    height:500px;
+    background-color:#BEE9FD;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    justify-content: center;
+    padding: 10%;
+    line-height: 250%;
+    font-family: 'Playfair Display';
+}
+
+
+.text > h2 {
+    margin-bottom: 3%;
+    /*color: #E91E25;*/
+    font-size: 40px;
+
+}
+
+
+.text > h5 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.text > p{
+    font-size: 17px;
+}
+
+.faces{
+    margin-top: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Playfair Display';
+}
+
+.faces > h2{
+    color: #7CC3CB;
+    font-size: 40px;
+}
+
+.faces > h6{
+    padding: 27px 0px;
+    font-size: 22px;
+}
+
+.faces-p-style{
+    width:55%;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.img-prop{
+    object-position: 50% 50%;
+}
+
+.img-prop > img{
+    height:700px;
+    object-fit: cover;
+    margin-bottom: 30px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    filter: brightness(67%);
+}
+
+.captions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+
+    font-family: 'Playfair Display';
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(25%);
+}
+
+.captions > h5 {
+    margin: 20px 0px;
+}
+
+.captions > span{
+    /*margin-top: 20px;*/
+    width:50%;
+    visibility: visible;
+}
+
+.footer{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playfair Display';
+}
+
+.footer h2{
+        font-size: 28px;
+        padding: 15px 0px;
+        margin:0px;
+    }
+
+a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+ }
+
+.footer h3{
+    font-size: 17px;
+}
+
+.footer img{
+    padding: 18px 0px;
+}
+
+.footer h5{
+    font-size: 15px;
+    padding-bottom: 40px 0px;
+}
+
+.no-spacing{
+    padding: 0px;
+    margin: 0px;
+}
+
+@media screen and (max-width: 767px) {
+
+    .nav_bar {
+        justify-content: space-evenly;
+    }
+    .motto {
+        text-align: center;
+    }
+
+    #about{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width : 1200px) {
+
+    .parallax{
+        background-image: url("https://images-na.ssl-images-amazon.com/images/I/91DO61bgDsL._AC_SL1500_.jpg");
+        background-attachment: inherit;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+
+    .parent{
+    margin-top: 0px;
+    }
+
+    .text{
+    height:400px;
+    background-color:#BEE9FD;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    justify-content: center;
+    padding: 10%;
+    line-height: 225%;
+    font-family: 'Playfair Display';
+    }
+
+    .text > p{
+    font-size: 20px;
+    }
+
+    .faces-p-style{
+        width:85%;
+    }
+}
+
+@media screen and (max-width : 655px) {
+
+    .parallax{
+        background-image: url("https://images-na.ssl-images-amazon.com/images/I/91DO61bgDsL._AC_SL1500_.jpg");
+        background-attachment: inherit;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+
+    .parent{
+    margin-top: 0px;
+    }
+
+    .text{
+    height:400px;
+    background-color:#BEE9FD;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    justify-content: center;
+    padding: 10%;
+    line-height: 200%;
+    font-family: 'Playfair Display';
+    }
+
+    .text > p{
+    font-size: 15px;
+    }
+
+    .faces-p-style{
+        width:85%;
+    }
+
+}
+
+@media only screen and (max-width: 705px){
+
+        .captions > h5 {
+        margin: 5px 0px;
+        }
+
+        .captions > span{
+        /*margin-top: 20px;*/
+        width:50%;
+        visibility: hidden;
+        }
+        .img-prop > img{
+        height: auto;
+        }
+}
